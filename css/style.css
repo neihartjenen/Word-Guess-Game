@@ -1,0 +1,70 @@
+*{
+    font-family: 'baloo chettan';
+    text-align: center;
+    margin: 0;
+    padding: 0
+  }
+  
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #49854e;
+    text-shadow: 1px 1px 1px #06310a;
+    height: 100vh;
+    background: url('/Word-Guess-Game/assets/images/wordguess.png') 
+  }
+  
+  .container{
+    width: 600px;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px #5d5d5d;
+    background-image: linear-gradient(to bottom, #b0b0b0, #707070, #515152)
+  }
+  
+  .header{
+    height: 50px;
+  }
+  
+  .letters{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .letter{
+    width: 60px;
+    height: 130px;
+    margin: 3px;
+  }
+ 
+  .wordMeaning {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: orange;
+    text-shadow: 1px 1px 1px #533a04;
+  
+  }
+  
+  .bottom {
+    height: 240px;
+    width: 100%;
+  }
+  
+  .keys {
+    width: 65%;
+    height: 240px;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
