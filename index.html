@@ -1,85 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Word Guess Game</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="javascript/game.js"></script>
-    <title>Word Guess Game</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/Word-Guess-Game/assets/css/style.css">
+  
+  <title>Word Guess</title>
+
+
 </head>
-
-<body>  
-    <div class="container">
-
-        <div class="header">
-          <h1>Word Guesser</h1>
-        </div>
-        <div class="letters">
-          <div class="letter">
-            <div></div>
-            <div></div>
-          </div>
-          <div class="letter">
-            <div>R</div>
-            <div></div>
-          </div>
-          <div class="letter">
-            <div></div>
-            <div></div>
-          </div>
-          <div class="letter">
-            <div></div>
-            <div></div>
-          </div>
-          <div class="letter">
-            <div></div>
-            <div></div>
-          </div>
-          <div class="letter">
-            <div>I</div>
-            <div></div>
-          </div>
-          <div class="letter">
-            <div></div>
-            <div></div>
-          </div>
-          <div class="letter">
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-          <div class="wordMeaning">
-            <p>a <i class='type'></i></p>
-            <p>meaning: <i class='meaning'></i></p>
-            <p>synonyms: <i class='synonyms'></i></p>
-          </div>
-        <div class="bottom">
-          <div class="keys">
-            <div class="keysPlacer">
-            </div>
-          </div>
-          <div class="bottom">
-            <div class="keys">
-              <div class="keysPlacer">
-              </div>
-            </div>
-            <div class="score">
-              <div class='stats'>
-                <div>
-                  <span>Your Score</span>
-                  <p class='scores'>0</p>
-                </div>
-                <div>
-                  <span>Lives</span>
-                  <p class='lives'>10</p>
-                </div>
-              </div>
-              <div class='highsc'>
-                <span>Highscore</span>
-                <p class='highscore'>0</p>
-              </div>
-            </div>
-          </div>
+<body>
+  <div class="container"> 
+    <div class="jumbotron border border-dark bg-info">
+      <h1>Word Guess</h1>
+      <br>
+    <h4 id="guess">Will you guess correctly?</h4>
+    <div class="wordToGuess">
+      <button type="button" class="btn btn-danger" onclick="startGame()">Play Now</button>
+      <p id="randomWord"></p>
+    <div class="numGuess">
+      <h4>Guesses Left</h4>
+      <div id="guessesLeft">
+        <div class="letterGuess">
+          <h4 id="two">Wrong Letters</h4>
+          <div id="guessedLetters"></div>
+        </div>  
+<script src="assets/javascript/game.js"></script>
+  
 </body>
 </html>
